@@ -79,7 +79,7 @@ export default function ReactivacionPage() {
             className="w-full px-3 py-2 text-sm border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500/30 resize-none" />
         </div>
         <button type="submit" disabled={estado === 'guardando'}
-          className="w-full py-3 bg-purple-700 hover:bg-purple-800 disabled:opacity-60 text-white font-semibold rounded-xl transition-colors">
+          className="w-full py-3 text-white font-semibold disabled:opacity-60 text-white font-semibold rounded-xl transition-colors">
           {estado === 'guardando' ? 'Guardando...' : estado === 'ok' ? '✓ Guardado' : 'Guardar carga semanal'}
         </button>
         {estado === 'error' && <p className="text-sm text-red-600 text-center">Error al guardar.</p>}

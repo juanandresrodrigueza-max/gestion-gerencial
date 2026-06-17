@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --bs-red:     #e4003f;
+    --bs-magenta: #a42785;
+    --bs-violet:  #4f3089;
+    --bs-lilac:   #c5bcdd;
+    --bs-gray:    #d6d1ca;
+    --bs-grad:    linear-gradient(135deg, #e4003f 0%, #a42785 50%, #4f3089 100%);
+  }
+}
+
+/* Scrollbar suave */
+* { scrollbar-width: thin; scrollbar-color: #c5bcdd #f8f8f8; }
