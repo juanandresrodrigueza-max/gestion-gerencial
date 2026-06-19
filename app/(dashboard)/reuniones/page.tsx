@@ -102,7 +102,7 @@ export default function ReunionesPage() {
         </div>
 
         <button type="submit" disabled={estado === 'guardando'}
-          className="w-full py-3 bg-blue-700 hover:bg-blue-800 disabled:opacity-60 text-white font-semibold rounded-xl transition-colors">
+          className="w-full py-3 text-white font-semibold disabled:opacity-60 text-white font-semibold rounded-xl transition-colors">
           {estado === 'guardando' ? 'Guardando...' : estado === 'ok' ? '✓ Reunión guardada' : 'Guardar reunión'}
         </button>
         {estado === 'error' && <p className="text-sm text-red-600 text-center">Error al guardar.</p>}

@@ -76,7 +76,8 @@ export default function AdminPage() {
             className="w-full px-3 py-2 text-sm border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/30 resize-none" />
         </div>
         <button type="submit" disabled={estado === 'guardando'}
-          className="w-full py-3 text-white font-semibold disabled:opacity-60 text-white font-semibold rounded-xl transition-colors">
+          className="w-full py-3 text-white font-bold rounded-xl transition-all disabled:opacity-60 hover:shadow-lg text-sm"
+          style={{ background: 'linear-gradient(135deg, #e4003f 0%, #a42785 50%, #4f3089 100%)' }}>
           {estado === 'guardando' ? 'Guardando...' : estado === 'ok' ? '✓ Guardado' : 'Guardar carga semanal'}
         </button>
         {estado === 'error' && <p className="text-sm text-red-600 text-center">Error al guardar.</p>}
